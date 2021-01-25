@@ -1,0 +1,73 @@
+/* ===================== HEADER ===================== */
+
+.header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.logo-header {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    word-spacing: -1ch;
+    font-family: raleway, sans-serif;
+    text-decoration: none;
+    margin-right: 94px;
+}
+
+.logo-web {
+    color: var(--accent-color);
+}
+
+.logo-studio {
+    color: var(--title-text-color);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.address {
+    display: flex;
+    margin-left: -50px;
+
+    &-icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;  
+        fill: #757575;
+    }
+
+    &-item {
+        color: var(--primary-text-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        text-decoration: none;
+        font-style: normal;
+        margin-left: 50px;
+        display: inline-flex;
+        transition-property: var(--accent-color);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+        &:hover svg,
+        &:focus svg {
+            fill: var(--accent-color);
+        }
+    }
+}

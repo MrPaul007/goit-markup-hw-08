@@ -1,0 +1,45 @@
+/* ===================== PRECEDENCE ===================== */
+.precedence {
+    padding-top: 94px;
+    &-icon {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.precedence-list {
+    display: flex;
+    justify-content: center;
+    margin-left: -30px;
+
+    & .item {
+        flex-basis: calc((100% - 90px) / 4);
+        margin-left: 30px;
+    }
+}
+
+.item-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.item-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.background-icon {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}

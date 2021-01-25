@@ -1,0 +1,69 @@
+/* ===================== COMPONENTS ===================== */
+
+.menu {
+    color: var(--title-text-color);
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    margin-right: -50px;
+
+    & .item {
+        margin-right: 50px;
+    }
+
+    & .link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        position: relative;
+        transition-property: var(--accent-color);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            height: 5px;
+            border-radius: 2px;
+            background-color: var(--accent-color);
+            opacity: 0;
+            transition-property: var(--accent-color);
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &:hover::after,
+        &:focus::after {
+            opacity: 1;
+        }
+    }
+    & .curent::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 5px;
+        border-radius: 2px;
+        background-color: var(--accent-color);
+        opacity: 1;
+    }
+}
+
+.link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--title-text-color);
+    text-decoration: none;
+}
+
+a.link.curent {
+    color: var(--accent-color);
+}
+
