@@ -81,6 +81,7 @@ a:focus {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    padding: 94px 15px;
   }
 }
 
@@ -151,6 +152,8 @@ a:focus {
 @media screen and (min-width: 768px) {
   .hiden-menu {
     display: flex;
+    margin-left: 88px;
+    width: 910px;
   }
 }
 
@@ -162,12 +165,6 @@ a:focus {
 
 a.link.curent {
   color: var(--accent-color);
-}
-
-@media screen and (min-width: 1200px) {
-  .nav {
-    margin-right: 302px;
-  }
 }
 
 .mailing-title {
@@ -562,7 +559,6 @@ a.link.curent {
   margin-right: auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .mobile-menu {
@@ -660,6 +656,7 @@ a.link.curent {
   font-size: 34px;
   line-height: 1.2;
   color: var(--accent-color);
+  font-style: normal;
 }
 
 .mobile-menu-mail {
@@ -667,6 +664,7 @@ a.link.curent {
   font-size: 24px;
   line-height: 1.19;
   color: var(--primary-text-color);
+  font-style: normal;
 }
 
 .mobile-menu-social-item {
@@ -688,7 +686,7 @@ a.link.curent {
 }
 
 .address {
-  margin-left: 76px;
+  margin-left: 70px;
 }
 
 .address-icon {
@@ -735,16 +733,18 @@ a.link.curent {
   .header {
     width: 1200px;
   }
+  .hiden-menu {
+    margin-left: 94px;
+  }
   .address {
     display: flex;
     margin-left: 0;
     margin-right: -30px;
   }
-  .logo-header {
-    margin-right: 94px;
-  }
   .address .item {
     margin-top: 32px;
+  }
+  .address .item:not(:last-child) {
     margin-right: 30px;
   }
 }
@@ -923,7 +923,7 @@ a.link.curent {
 /* ===================== WORKS ===================== */
 .works {
   display: none;
-  padding: 94px 0;
+  padding: 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -977,9 +977,6 @@ a.link.curent {
 }
 
 .our-team-title {
-  /*font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;*/
   font-weight: 700;
   font-size: 28px;
   line-height: 1.18;
@@ -998,6 +995,7 @@ a.link.curent {
   }
   .team-item {
     flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
   }
   .teammate-image {
     width: 354px;
@@ -1030,7 +1028,6 @@ a.link.curent {
   background-color: var(--primary-white-color);
   padding-bottom: 24px;
   border-radius: 5px;
-  margin-left: 30px;
   margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }

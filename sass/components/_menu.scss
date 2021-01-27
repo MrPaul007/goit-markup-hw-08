@@ -68,6 +68,8 @@
 @media screen and (min-width: 768px) {
     .hiden-menu {
         display: flex;
+        margin-left: 88px;
+        width: 910px;
     }
 }
 
@@ -79,11 +81,4 @@
 
 a.link.curent {
     color: var(--accent-color);
-}
-
-
-@media screen and (min-width: 1200px) {
-    .nav {
-        margin-right: 302px;
-    }
 }

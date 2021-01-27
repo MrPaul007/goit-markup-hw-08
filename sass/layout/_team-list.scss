@@ -6,9 +6,6 @@
 }
 
 .our-team-title {
-    /*font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;*/
     font-weight: 700;
     font-size: 28px;
     line-height: 1.18;
@@ -28,6 +25,7 @@
 
     .team-item {
         flex-basis: calc((100% - 60px) / 2);
+        margin-left: 30px;
     }
 
     .teammate-image {
@@ -64,7 +62,6 @@
     background-color: var(--primary-white-color);
     padding-bottom: 24px;
     border-radius: 5px;
-    margin-left: 30px;
     margin-bottom: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
