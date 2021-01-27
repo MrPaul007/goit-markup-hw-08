@@ -1,52 +1,94 @@
 /* ===================== TEAM-LIST ===================== */
 
-.team-list {
-    display: flex;
-    justify-content: center;
-    margin-left: -30px;
+.teammate-image {
+    width: 450px;
+    height: 460px;
+}
 
-    & .team-item {
-        margin-left: 30px;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-            0px 1px 1px rgba(0, 0, 0, 0.14),
-            0px 2px 1px rgba(0, 0, 0, 0.2);
+.our-team-title {
+    /*font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;*/
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: -30px;
+        margin-bottom: -30px;
+    }
+
+    .team-item {
+        flex-basis: calc((100% - 60px) / 2);
+    }
+
+    .teammate-image {
+        width: 354px;
+        height: 374px;
     }
 }
 
-.our-team {
-    padding: 94px 0;
-    background-color: #F5F4FA;
-    
-    &-title {
+@media screen and (min-width: 1200px) {
+    .our-team-title {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
-        text-align: center;
-        margin-top: 0;
-        margin-bottom: 50px;
+    }
+    
+    .team-list {
+        display: flex;
+        justify-content: center;
+        margin-left: -30px;
+        margin-bottom: -30px;
     }
 
-    & .container {
-        text-align: center;
+    .team-item {
+        flex-basis: calc((100% - 120px) / 4);
     }
 
-    & .teammate-name {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.2;
-        margin-top: 30px;
-        margin-bottom: 10px;
+    .teammate-image {
+        width: 270px;
+        height: 260px;
     }
 }
 
 .team-item {
     background-color: var(--primary-white-color);
-    padding-bottom: 30px;
+    padding-bottom: 24px;
     border-radius: 5px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.our-team {
+    background-color: #F5F4FA;
+
+    & .container {
+        text-align: center;
+    }
+}
+
+.teammate-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .teammate-role {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     margin-top: 0;

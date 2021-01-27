@@ -1,13 +1,21 @@
 /* ===================== COMPONENTS ===================== */
 
+.hiden-menu {
+    display: none;
+    justify-content: space-between;
+}
+
+
 .menu {
     color: var(--title-text-color);
     text-decoration: none;
     align-items: center;
     display: flex;
     margin-right: -50px;
+    
 
     & .item {
+        flex-direction: row;
         margin-right: 50px;
     }
 
@@ -16,6 +24,8 @@
         font-size: 14px;
         line-height: 1.14;
         position: relative;
+        padding-top: 32px;
+        padding-bottom: 32px;
         transition-property: var(--accent-color);
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -55,10 +65,14 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .hiden-menu {
+        display: flex;
+    }
+}
+
 .link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
     color: var(--title-text-color);
     text-decoration: none;
 }
@@ -67,3 +81,9 @@ a.link.curent {
     color: var(--accent-color);
 }
 
+
+@media screen and (min-width: 1200px) {
+    .nav {
+        margin-right: 302px;
+    }
+}
