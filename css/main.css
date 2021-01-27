@@ -923,12 +923,14 @@ a.link.curent {
 /* ===================== WORKS ===================== */
 .works {
   display: none;
-  padding: 0;
 }
 
 @media screen and (min-width: 1200px) {
   .works {
     display: flex;
+  }
+  .works .container {
+    padding-top: 0;
   }
 }
 
