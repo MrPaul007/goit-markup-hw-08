@@ -38,6 +38,12 @@
     align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+    .main-nav {
+        justify-content: space-between;
+    }
+}
+
 .mobile-menu {
     position: absolute;
     z-index: 2;
